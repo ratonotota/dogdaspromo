@@ -36,11 +36,6 @@ export const CleanLanding: React.FC<CleanLandingProps> = ({
           </span>
         </div>
 
-        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-neutral-900 border border-neutral-800 text-xs text-neutral-300 font-medium mb-3">
-          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-          <span>@dogdaspromo no Instagram</span>
-        </div>
-
         {/* Clean, bold title with no underline */}
         <h1 className="font-display font-extrabold text-2xl sm:text-3xl text-white tracking-tight leading-tight mb-2 text-balance">
           Pare de pagar caro. Receba as <span className="text-emerald-400">melhores promoções</span> no seu WhatsApp.

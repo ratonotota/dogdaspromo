@@ -19,7 +19,7 @@ export const SimpleNav: React.FC = () => {
 
       <div className="flex items-center">
         <a
-          href="https://instagram.com/dogdaspromo"
+          href="https://www.instagram.com/dogdaspromo/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-1.5 text-xs font-semibold text-neutral-300 hover:text-pink-400 transition-colors px-3 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 hover:border-neutral-700 shadow-sm"
