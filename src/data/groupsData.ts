@@ -1,4 +1,11 @@
-import { WhatsAppGroup, Testimonial, LiveDeal, FaqItem } from '../types';
+import { WhatsAppGroup, Testimonial } from '../types';
+
+import plantasIcon from '../assets/images/plantas_promo_1790462250336.jpg';
+import techIcon from '../assets/images/tech_promo_1790462259636.jpg';
+import donasDeCasaIcon from '../assets/images/donas_de_casa_1790462269447.jpg';
+import fitnessIcon from '../assets/images/fitness_promo_1790462278467.jpg';
+import tenisIcon from '../assets/images/tenis_promo_1790462292204.jpg';
+import perfumesIcon from '../assets/images/perfumes_promo_1790462301417.jpg';
 
 export const GROUPS_DATA: WhatsAppGroup[] = [
   {
@@ -13,7 +20,8 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     maxMembers: 1024,
     accentColor: '#10B981',
     bgGradient: 'from-emerald-500/15 via-teal-500/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/C8lag0vrh2yKSnVbZxxkol',
+    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoPlantas',
+    iconImage: plantasIcon,
     tags: ['Orquídeas & Suculentas', 'Vasos & Adubos', 'Frete Grátis'],
     sampleDeals: [
       {
@@ -27,7 +35,7 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
   },
   {
     id: 'celular',
-    name: 'Grupo de Celular',
+    name: 'Grupo de Celular & Tech',
     slug: 'celular',
     category: 'celular',
     categoryLabel: 'Celular & Tech',
@@ -37,7 +45,8 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     maxMembers: 1024,
     accentColor: '#3B82F6',
     bgGradient: 'from-blue-500/15 via-cyan-500/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/Fh6SXYEUJ7tC3qAcKO0XUW',
+    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoCelulares',
+    iconImage: techIcon,
     tags: ['Smartphones', 'Apple & Xiaomi', 'Eletrônicos'],
     sampleDeals: [
       {
@@ -59,9 +68,10 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     highlights: ['Eletrodomésticos para cozinha', 'Robôs aspiradores com 50%+ OFF', 'Achados Shopee e Mercado Livre'],
     membersCount: 1012,
     maxMembers: 1024,
-    accentColor: '#EC4899',
-    bgGradient: 'from-rose-500/15 via-orange-500/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/G1iUbAJLpisD9kBNzENAq4',
+    accentColor: '#0EA5E9',
+    bgGradient: 'from-sky-500/15 via-blue-500/5 to-transparent',
+    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoDonaDeCasa',
+    iconImage: donasDeCasaIcon,
     tags: ['Cozinha & Lar', 'Air Fryer & Robô', 'Achadinhos'],
     sampleDeals: [
       {
@@ -83,9 +93,10 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     highlights: ['Creatina e Whey em combos baratos', 'Roupas de academia', 'Acessórios de treino'],
     membersCount: 978,
     maxMembers: 1024,
-    accentColor: '#F59E0B',
-    bgGradient: 'from-amber-500/15 via-yellow-500/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/JlNkZEGE5eC7rELuofLsAJ',
+    accentColor: '#EC4899',
+    bgGradient: 'from-pink-500/15 via-rose-500/5 to-transparent',
+    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoFitness',
+    iconImage: fitnessIcon,
     tags: ['Whey & Creatina', 'Roupas Academia', 'Suplementos'],
     sampleDeals: [
       {
@@ -107,9 +118,10 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     highlights: ['Nike & Adidas originais lacrados', 'Tênis de amortecimento para corrida', 'Até 65% OFF com cupom'],
     membersCount: 1004,
     maxMembers: 1024,
-    accentColor: '#8B5CF6',
-    bgGradient: 'from-violet-500/15 via-purple-500/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/HeUasbAImUoJQSUzwMhbGb',
+    accentColor: '#EAB308',
+    bgGradient: 'from-yellow-500/15 via-amber-500/5 to-transparent',
+    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoTenis',
+    iconImage: tenisIcon,
     tags: ['Nike & Adidas', 'Corrida & Casual', 'Sneakers'],
     sampleDeals: [
       {
@@ -131,9 +143,10 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     highlights: ['Importados com selo ADIPEC', 'Contratipos de alta fixação', 'Skincare em promoção'],
     membersCount: 986,
     maxMembers: 1024,
-    accentColor: '#D946EF',
-    bgGradient: 'from-fuchsia-500/15 via-pink-500/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/KAXUEOWT9zYFwwnTMwolR6',
+    accentColor: '#D97706',
+    bgGradient: 'from-amber-600/15 via-yellow-600/5 to-transparent',
+    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoPerfumes',
+    iconImage: perfumesIcon,
     tags: ['Importados 100% Originais', 'Dior & Paco', 'Skincare'],
     sampleDeals: [
       {
@@ -156,7 +169,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     city: 'Rio de Janeiro, RJ',
     savedAmount: 'Economizou R$ 850',
     productBought: 'Samsung Galaxy S23 5G',
-    groupName: 'Grupo de Celular',
+    groupName: 'Grupo de Celular & Tech',
     quote: 'Entrou o alerta no grupo do Dog às 23h40 com um cupom cumulativo na Magalu. Peguei na hora! Chegou lacrado em 2 dias.',
     rating: 5,
     dateAgo: 'há 2 dias',

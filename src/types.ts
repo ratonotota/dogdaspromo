@@ -23,6 +23,7 @@ export interface WhatsAppGroup {
   whatsappUrl: string;
   sampleDeals: SampleDeal[];
   tags: string[];
+  iconImage?: string;
 }
 
 export interface Testimonial {

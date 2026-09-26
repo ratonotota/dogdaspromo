@@ -1,18 +1,13 @@
 import React from 'react';
 import { 
   ArrowRight, 
-  Sprout, 
-  Smartphone, 
-  Home, 
-  Dumbbell, 
-  Footprints, 
-  Sparkle,
-  Copy,
-  Check,
-  ShieldCheck,
-  Star
+  Copy, 
+  Check, 
+  ShieldCheck, 
+  Star,
+  ExternalLink
 } from 'lucide-react';
-import dogMascotAvatar from '../assets/images/dog_mascot_avatar_1790459217536.jpg';
+import officialMascot from '../assets/images/mascote_oficial_1790462237853.jpg';
 import { WhatsAppGroup } from '../types';
 
 interface CleanLandingProps {
@@ -28,122 +23,78 @@ export const CleanLanding: React.FC<CleanLandingProps> = ({
   onCopyLink,
   copiedGroupId,
 }) => {
-  // Category specific icons, colors & details
-  const categoryConfig: Record<string, { 
-    icon: React.ReactNode; 
-    bgAccent: string; 
-    borderHover: string;
-    pillText: string;
-  }> = {
-    plantas: {
-      icon: <Sprout className="w-6 h-6 text-emerald-400 shrink-0" />,
-      bgAccent: 'bg-emerald-500/10 text-emerald-400 border-emerald-500/30',
-      borderHover: 'hover:border-emerald-500/60 active:border-emerald-400',
-      pillText: 'Mudinhas, orquídeas, suculentas & adubos',
-    },
-    celular: {
-      icon: <Smartphone className="w-6 h-6 text-blue-400 shrink-0" />,
-      bgAccent: 'bg-blue-500/10 text-blue-400 border-blue-500/30',
-      borderHover: 'hover:border-blue-500/60 active:border-blue-400',
-      pillText: 'iPhones, Xiaomi, Galaxy & fones',
-    },
-    casa: {
-      icon: <Home className="w-6 h-6 text-rose-400 shrink-0" />,
-      bgAccent: 'bg-rose-500/10 text-rose-400 border-rose-500/30',
-      borderHover: 'hover:border-rose-500/60 active:border-rose-400',
-      pillText: 'Air fryer, panelas & robôs aspiradores',
-    },
-    fitness: {
-      icon: <Dumbbell className="w-6 h-6 text-amber-400 shrink-0" />,
-      bgAccent: 'bg-amber-500/10 text-amber-400 border-amber-500/30',
-      borderHover: 'hover:border-amber-500/60 active:border-amber-400',
-      pillText: 'Creatina, Whey & roupas de academia',
-    },
-    tenis: {
-      icon: <Footprints className="w-6 h-6 text-purple-400 shrink-0" />,
-      bgAccent: 'bg-purple-500/10 text-purple-400 border-purple-500/30',
-      borderHover: 'hover:border-purple-500/60 active:border-purple-400',
-      pillText: 'Nike, Adidas, corrida & casuais',
-    },
-    perfume: {
-      icon: <Sparkle className="w-6 h-6 text-fuchsia-400 shrink-0" />,
-      bgAccent: 'bg-fuchsia-500/10 text-fuchsia-400 border-fuchsia-500/30',
-      borderHover: 'hover:border-fuchsia-500/60 active:border-fuchsia-400',
-      pillText: 'Importados originais & maquiagem',
-    },
-  };
-
   return (
-    <div className="w-full max-w-md mx-auto px-4 pt-2 pb-10 sm:pt-4">
+    <div className="w-full max-w-md mx-auto px-4 pt-3 pb-10 sm:pt-5">
       
-      {/* 1. BRAND HEADER - OPTIMIZED FOR MOBILE SCREEN */}
+      {/* 1. CENTRAL LOGO WITH OFFICIAL MASCOT BADGE */}
       <div className="flex flex-col items-center text-center mb-6">
-        <div className="relative mb-3">
+        <div className="relative mb-3 group cursor-pointer">
+          <div className="absolute -inset-1 bg-gradient-to-r from-amber-400 via-emerald-400 to-sky-400 rounded-full blur-md opacity-40 group-hover:opacity-75 transition duration-500" />
           <img
-            src={dogMascotAvatar}
-            alt="Dog das Promo"
+            src={officialMascot}
+            alt="Dog das Promo Mascote Oficial"
             referrerPolicy="no-referrer"
-            className="w-20 h-20 rounded-2xl object-cover ring-2 ring-emerald-500/40 shadow-lg shadow-emerald-500/10"
+            className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full object-cover ring-4 ring-neutral-900 shadow-2xl shadow-emerald-500/20 group-hover:scale-105 transition-transform"
           />
-          <span className="absolute -bottom-1 -right-1 px-1.5 py-0.5 bg-emerald-400 text-neutral-950 text-[9px] font-black rounded uppercase tracking-wider">
+          <span className="absolute bottom-0 right-1 px-2 py-0.5 bg-emerald-400 text-neutral-950 text-[10px] font-black rounded-full uppercase tracking-wider shadow border-2 border-neutral-950">
             OFICIAL
           </span>
         </div>
 
-        <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-neutral-900 border border-neutral-800 text-[11px] text-neutral-300 font-medium mb-2.5">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+        <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-neutral-900 border border-neutral-800 text-xs text-neutral-300 font-medium mb-3">
+          <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
           <span>@dogdaspromo no Instagram</span>
         </div>
 
-        {/* Kept Title that the user loved */}
+        {/* The Exact Title the user loves */}
         <h1 className="font-display font-extrabold text-2xl sm:text-3xl text-white tracking-tight leading-tight mb-2 text-balance">
           Pare de pagar caro. Receba as <span className="text-emerald-400 underline decoration-emerald-500/40 underline-offset-4">melhores promoções</span> no seu WhatsApp.
         </h1>
 
-        <p className="text-xs text-neutral-400 max-w-xs mx-auto">
+        <p className="text-xs sm:text-sm text-neutral-400 max-w-xs mx-auto">
           Escolha seu grupo abaixo e entre de graça. Sem bate-papo, apenas ofertas reais verificadas.
         </p>
       </div>
 
-      {/* 2. THE 6 GROUPS (Direct, High-Conversion, Thumb-Friendly Tap Target >= 48px) */}
+      {/* 2. THE 6 GROUPS WITH OFFICIAL ART BADGES */}
       <div className="space-y-3 mb-6">
         {groups.map((group) => {
-          const config = categoryConfig[group.category] || {
-            icon: <Smartphone className="w-6 h-6 text-emerald-400 shrink-0" />,
-            bgAccent: 'bg-neutral-800 text-neutral-200 border-neutral-700',
-            borderHover: 'hover:border-neutral-700',
-            pillText: group.description,
-          };
-
           const isCopied = copiedGroupId === group.id;
 
           return (
             <div
               key={group.id}
-              className={`group relative flex items-center justify-between p-3.5 rounded-2xl bg-neutral-900/90 border border-neutral-800/90 transition-all shadow-sm ${config.borderHover}`}
+              className="group relative flex items-center justify-between p-3 sm:p-3.5 rounded-2xl bg-neutral-900/90 border border-neutral-800 hover:border-neutral-700 active:border-emerald-500/50 transition-all shadow-sm"
             >
-              {/* Entire Left Area is Tappable */}
+              {/* Tappable Left Area (Icon + Text) */}
               <button
                 type="button"
                 onClick={() => onJoinDirect(group)}
                 className="flex items-center gap-3 text-left flex-1 min-w-0 pr-2 cursor-pointer focus:outline-none"
               >
-                <div className="w-11 h-11 rounded-xl bg-neutral-950 border border-neutral-800 flex items-center justify-center shrink-0 group-hover:scale-105 active:scale-95 transition-transform">
-                  {config.icon}
+                {/* Official Custom Badge Icon */}
+                <div className="relative shrink-0">
+                  <img
+                    src={group.iconImage || officialMascot}
+                    alt={group.name}
+                    referrerPolicy="no-referrer"
+                    className="w-13 h-13 sm:w-14 sm:h-14 rounded-full object-cover ring-2 ring-neutral-800 group-hover:ring-emerald-400/60 shadow-md group-hover:scale-105 active:scale-95 transition-transform"
+                  />
                 </div>
+
                 <div className="min-w-0 flex-1">
                   <h2 className="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors leading-tight truncate">
                     {group.name}
                   </h2>
                   <p className="text-[11px] text-neutral-400 truncate mt-0.5">
-                    {config.pillText}
+                    {group.description}
                   </p>
                 </div>
               </button>
 
               {/* Action Buttons Right Side */}
               <div className="flex items-center gap-1.5 shrink-0">
-                {/* Big Direct Join Button (Min 44px tap target) */}
+                {/* Join Button */}
                 <button
                   type="button"
                   onClick={() => onJoinDirect(group)}
@@ -157,12 +108,12 @@ export const CleanLanding: React.FC<CleanLandingProps> = ({
                   <ArrowRight className="w-3.5 h-3.5" />
                 </button>
 
-                {/* Quick Copy Icon */}
+                {/* Quick Copy Link */}
                 <button
                   type="button"
                   onClick={() => onCopyLink(group)}
                   title="Copiar link"
-                  className="p-2.5 rounded-xl text-neutral-500 hover:text-neutral-200 hover:bg-neutral-800 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center"
+                  className="p-2.5 rounded-xl text-neutral-500 hover:text-neutral-200 hover:bg-neutral-800 transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center cursor-pointer"
                 >
                   {isCopied ? (
                     <Check className="w-4 h-4 text-emerald-400" />
@@ -176,7 +127,7 @@ export const CleanLanding: React.FC<CleanLandingProps> = ({
         })}
       </div>
 
-      {/* 3. TRUST SIGNALS (Instant Reassurance in Mobile Viewport) */}
+      {/* 3. TRUST SIGNALS */}
       <div className="p-3 mb-6 rounded-xl bg-neutral-900/60 border border-neutral-800 text-[11px] text-neutral-400 space-y-1.5">
         <div className="flex items-center gap-2 text-neutral-300 font-medium">
           <ShieldCheck className="w-4 h-4 text-emerald-400 shrink-0" />
@@ -201,7 +152,7 @@ export const CleanLanding: React.FC<CleanLandingProps> = ({
           {[
             {
               name: 'Mariana A. (@mari.alencar)',
-              group: 'Grupo de Celular',
+              group: 'Grupo de Celular & Tech',
               quote: 'Entrou o alerta com cupom na Magalu às 23h40. Comprei o S23 com R$ 850 de desconto!',
             },
             {
