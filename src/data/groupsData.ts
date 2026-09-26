@@ -35,7 +35,7 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
   },
   {
     id: 'celular',
-    name: 'Grupo de Celular & Tech',
+    name: 'Grupo de Tecnologia',
     slug: 'celular',
     category: 'celular',
     categoryLabel: 'Celular & Tech',
