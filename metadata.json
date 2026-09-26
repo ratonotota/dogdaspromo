@@ -1,0 +1,6 @@
+{
+  "name": "Dog das Promo - Grupos VIP de WhatsApp",
+  "description": "Landing page de alta conversão para os grupos de ofertas do Dog das Promo no WhatsApp. Achadinhos, cupons exclusivos e bugs de preço.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
