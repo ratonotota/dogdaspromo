@@ -4,7 +4,7 @@ import {
   ShieldCheck, 
   Star
 } from 'lucide-react';
-import officialMascot from '../assets/images/mascote_dark_border_1790462906850.jpg';
+import officialMascot from '../assets/Images_fixed/mascote.jpg';
 import { WhatsAppGroup } from '../types';
 
 interface CleanLandingProps {
@@ -19,7 +19,7 @@ export const CleanLanding: React.FC<CleanLandingProps> = ({
   return (
     <div className="w-full max-w-md mx-auto px-4 pt-2 pb-10 sm:pt-4">
       
-      {/* 1. CENTRAL LOGO WITH REFINED DARK-BORDER MASCOT */}
+      {/* 1. CENTRAL LOGO WITH USER'S FIXED MASCOT IMAGE */}
       <div className="flex flex-col items-center text-center mb-6">
         <div className="relative mb-3 group">
           {/* Subtle warm glow behind mascot */}
@@ -124,7 +124,7 @@ export const CleanLanding: React.FC<CleanLandingProps> = ({
           {[
             {
               name: 'Mariana A. (@mari.alencar)',
-              group: 'Grupo de Celular & Tech',
+              group: 'Grupo de Tecnologia',
               quote: 'Entrou o alerta com cupom na Magalu às 23h40. Comprei o S23 com R$ 850 de desconto!',
             },
             {

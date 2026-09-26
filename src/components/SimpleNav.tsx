@@ -1,6 +1,6 @@
 import React from 'react';
 import { Instagram } from 'lucide-react';
-import officialMascot from '../assets/images/mascote_dark_border_1790462906850.jpg';
+import officialMascot from '../assets/Images_fixed/mascote.jpg';
 
 export const SimpleNav: React.FC = () => {
   return (

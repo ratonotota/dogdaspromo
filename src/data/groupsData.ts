@@ -1,11 +1,11 @@
 import { WhatsAppGroup, Testimonial } from '../types';
 
-import plantasIcon from '../assets/images/plantas_promo_1790462250336.jpg';
-import techIcon from '../assets/images/tech_promo_1790462259636.jpg';
-import donasDeCasaIcon from '../assets/images/donas_de_casa_1790462269447.jpg';
-import fitnessIcon from '../assets/images/fitness_promo_1790462278467.jpg';
-import tenisIcon from '../assets/images/tenis_promo_1790462292204.jpg';
-import perfumesIcon from '../assets/images/perfumes_promo_1790462301417.jpg';
+import plantasIcon from '../assets/Images_fixed/plantas.png';
+import techIcon from '../assets/Images_fixed/tech.png';
+import donasDeCasaIcon from '../assets/Images_fixed/donas de casa.png';
+import fitnessIcon from '../assets/Images_fixed/fitness.png';
+import tenisIcon from '../assets/Images_fixed/tenis.png';
+import perfumesIcon from '../assets/Images_fixed/perfumes.png';
 
 export const GROUPS_DATA: WhatsAppGroup[] = [
   {
@@ -169,7 +169,7 @@ export const TESTIMONIALS_DATA: Testimonial[] = [
     city: 'Rio de Janeiro, RJ',
     savedAmount: 'Economizou R$ 850',
     productBought: 'Samsung Galaxy S23 5G',
-    groupName: 'Grupo de Celular & Tech',
+    groupName: 'Grupo de Tecnologia',
     quote: 'Entrou o alerta no grupo do Dog às 23h40 com um cupom cumulativo na Magalu. Peguei na hora! Chegou lacrado em 2 dias.',
     rating: 5,
     dateAgo: 'há 2 dias',
