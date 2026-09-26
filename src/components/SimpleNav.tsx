@@ -1,44 +1,32 @@
 import React from 'react';
-import { Settings2, Instagram } from 'lucide-react';
-import officialMascot from '../assets/images/mascote_oficial_1790462237853.jpg';
+import { Instagram } from 'lucide-react';
+import officialMascot from '../assets/images/mascote_dark_border_1790462906850.jpg';
 
-interface SimpleNavProps {
-  onOpenSettings: () => void;
-}
-
-export const SimpleNav: React.FC<SimpleNavProps> = ({ onOpenSettings }) => {
+export const SimpleNav: React.FC = () => {
   return (
     <nav className="w-full max-w-md mx-auto px-4 py-3 flex items-center justify-between">
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-2.5">
         <img
           src={officialMascot}
           alt="Dog das Promo"
           referrerPolicy="no-referrer"
-          className="w-7 h-7 rounded-full object-cover ring-1 ring-emerald-500/50"
+          className="w-8 h-8 rounded-full object-cover ring-1 ring-emerald-500/40 shadow-sm"
         />
         <span className="font-display font-extrabold text-sm tracking-tight text-white">
           DOG DAS PROMO
         </span>
       </div>
 
-      <div className="flex items-center gap-2">
+      <div className="flex items-center">
         <a
-          href="https://instagram.com"
+          href="https://instagram.com/dogdaspromo"
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-1 text-[11px] font-medium text-neutral-400 hover:text-pink-400 transition-colors px-2 py-1 rounded-md bg-neutral-900 border border-neutral-800"
+          className="flex items-center gap-1.5 text-xs font-semibold text-neutral-300 hover:text-pink-400 transition-colors px-3 py-1.5 rounded-full bg-neutral-900 border border-neutral-800 hover:border-neutral-700 shadow-sm"
         >
-          <Instagram className="w-3.5 h-3.5" />
+          <Instagram className="w-3.5 h-3.5 text-pink-400" />
           <span>Instagram</span>
         </a>
-
-        <button
-          onClick={onOpenSettings}
-          title="Editar links de WhatsApp"
-          className="p-1.5 text-neutral-500 hover:text-neutral-300 hover:bg-neutral-900 rounded-lg transition-colors cursor-pointer"
-        >
-          <Settings2 className="w-4 h-4" />
-        </button>
       </div>
     </nav>
   );
