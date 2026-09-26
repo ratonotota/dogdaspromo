@@ -20,7 +20,7 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     maxMembers: 1024,
     accentColor: '#10B981',
     bgGradient: 'from-emerald-500/15 via-teal-500/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoPlantas',
+    whatsappUrl: 'https://chat.whatsapp.com/C8lag0vrh2yKSnVbZxxkol',
     iconImage: plantasIcon,
     tags: ['Orquídeas & Suculentas', 'Vasos & Adubos', 'Frete Grátis'],
     sampleDeals: [
@@ -45,7 +45,7 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     maxMembers: 1024,
     accentColor: '#3B82F6',
     bgGradient: 'from-blue-500/15 via-cyan-500/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoCelulares',
+    whatsappUrl: 'https://chat.whatsapp.com/Fh6SXYEUJ7tC3qAcKO0XUW',
     iconImage: techIcon,
     tags: ['Smartphones', 'Apple & Xiaomi', 'Eletrônicos'],
     sampleDeals: [
@@ -70,7 +70,7 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     maxMembers: 1024,
     accentColor: '#0EA5E9',
     bgGradient: 'from-sky-500/15 via-blue-500/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoDonaDeCasa',
+    whatsappUrl: 'https://chat.whatsapp.com/G1iUbAJLpisD9kBNzENAq4',
     iconImage: donasDeCasaIcon,
     tags: ['Cozinha & Lar', 'Air Fryer & Robô', 'Achadinhos'],
     sampleDeals: [
@@ -95,7 +95,7 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     maxMembers: 1024,
     accentColor: '#EC4899',
     bgGradient: 'from-pink-500/15 via-rose-500/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoFitness',
+    whatsappUrl: 'https://chat.whatsapp.com/JlNkZEGE5eC7rELuofLsAJ',
     iconImage: fitnessIcon,
     tags: ['Whey & Creatina', 'Roupas Academia', 'Suplementos'],
     sampleDeals: [
@@ -120,7 +120,7 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     maxMembers: 1024,
     accentColor: '#EAB308',
     bgGradient: 'from-yellow-500/15 via-amber-500/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoTenis',
+    whatsappUrl: 'https://chat.whatsapp.com/HeUasbAImUoJQSUzwMhbGb',
     iconImage: tenisIcon,
     tags: ['Nike & Adidas', 'Corrida & Casual', 'Sneakers'],
     sampleDeals: [
@@ -145,7 +145,7 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     maxMembers: 1024,
     accentColor: '#D97706',
     bgGradient: 'from-amber-600/15 via-yellow-600/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoPerfumes',
+    whatsappUrl: 'https://chat.whatsapp.com/KAXUEOWT9zYFwwnTMwolR6',
     iconImage: perfumesIcon,
     tags: ['Importados 100% Originais', 'Dior & Paco', 'Skincare'],
     sampleDeals: [
