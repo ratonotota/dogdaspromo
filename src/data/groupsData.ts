@@ -13,7 +13,7 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     maxMembers: 1024,
     accentColor: '#10B981',
     bgGradient: 'from-emerald-500/15 via-teal-500/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoPlantas',
+    whatsappUrl: 'https://chat.whatsapp.com/C8lag0vrh2yKSnVbZxxkol',
     tags: ['Orquídeas & Suculentas', 'Vasos & Adubos', 'Frete Grátis'],
     sampleDeals: [
       {
@@ -37,7 +37,7 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     maxMembers: 1024,
     accentColor: '#3B82F6',
     bgGradient: 'from-blue-500/15 via-cyan-500/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoCelulares',
+    whatsappUrl: 'https://chat.whatsapp.com/Fh6SXYEUJ7tC3qAcKO0XUW',
     tags: ['Smartphones', 'Apple & Xiaomi', 'Eletrônicos'],
     sampleDeals: [
       {
@@ -61,7 +61,7 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     maxMembers: 1024,
     accentColor: '#EC4899',
     bgGradient: 'from-rose-500/15 via-orange-500/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoDonaDeCasa',
+    whatsappUrl: 'https://chat.whatsapp.com/G1iUbAJLpisD9kBNzENAq4',
     tags: ['Cozinha & Lar', 'Air Fryer & Robô', 'Achadinhos'],
     sampleDeals: [
       {
@@ -85,7 +85,7 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     maxMembers: 1024,
     accentColor: '#F59E0B',
     bgGradient: 'from-amber-500/15 via-yellow-500/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoFitness',
+    whatsappUrl: 'https://chat.whatsapp.com/JlNkZEGE5eC7rELuofLsAJ',
     tags: ['Whey & Creatina', 'Roupas Academia', 'Suplementos'],
     sampleDeals: [
       {
@@ -109,7 +109,7 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     maxMembers: 1024,
     accentColor: '#8B5CF6',
     bgGradient: 'from-violet-500/15 via-purple-500/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoTenis',
+    whatsappUrl: 'https://chat.whatsapp.com/HeUasbAImUoJQSUzwMhbGb',
     tags: ['Nike & Adidas', 'Corrida & Casual', 'Sneakers'],
     sampleDeals: [
       {
@@ -133,7 +133,7 @@ export const GROUPS_DATA: WhatsAppGroup[] = [
     maxMembers: 1024,
     accentColor: '#D946EF',
     bgGradient: 'from-fuchsia-500/15 via-pink-500/5 to-transparent',
-    whatsappUrl: 'https://chat.whatsapp.com/DogDasPromoPerfumes',
+    whatsappUrl: 'https://chat.whatsapp.com/KAXUEOWT9zYFwwnTMwolR6',
     tags: ['Importados 100% Originais', 'Dior & Paco', 'Skincare'],
     sampleDeals: [
       {
