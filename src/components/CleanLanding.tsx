@@ -2,7 +2,8 @@ import React from 'react';
 import { 
   ArrowRight, 
   ShieldCheck, 
-  Star
+  Star,
+  ExternalLink
 } from 'lucide-react';
 import officialMascot from '../assets/Images_fixed/mascote.jpg';
 import { WhatsAppGroup } from '../types';
@@ -10,11 +11,13 @@ import { WhatsAppGroup } from '../types';
 interface CleanLandingProps {
   groups: WhatsAppGroup[];
   onJoinDirect: (group: WhatsAppGroup) => void;
+  onSelectGroup?: (group: WhatsAppGroup) => void;
 }
 
 export const CleanLanding: React.FC<CleanLandingProps> = ({
   groups,
   onJoinDirect,
+  onSelectGroup,
 }) => {
   return (
     <div className="w-full max-w-md mx-auto px-4 pt-2 pb-10 sm:pt-4">
@@ -57,7 +60,7 @@ export const CleanLanding: React.FC<CleanLandingProps> = ({
               {/* Tappable Area (Icon + Text) */}
               <button
                 type="button"
-                onClick={() => onJoinDirect(group)}
+                onClick={() => onSelectGroup ? onSelectGroup(group) : onJoinDirect(group)}
                 className="flex items-center gap-3 text-left flex-1 min-w-0 pr-3 cursor-pointer focus:outline-none"
               >
                 {/* Official Custom Badge Icon */}
@@ -78,8 +81,21 @@ export const CleanLanding: React.FC<CleanLandingProps> = ({
                 </div>
               </button>
 
-              {/* Compact "Entrar" Action Button */}
-              <div className="shrink-0">
+              {/* Action Buttons */}
+              <div className="shrink-0 flex items-center gap-1.5">
+                {/* Quick Link to Dedicated Group Landing Page */}
+                {onSelectGroup && (
+                  <button
+                    type="button"
+                    onClick={() => onSelectGroup(group)}
+                    title={`Ver detalhes do ${group.name}`}
+                    className="p-2 rounded-xl bg-neutral-800/80 hover:bg-neutral-800 text-neutral-400 hover:text-white transition-colors cursor-pointer"
+                  >
+                    <ExternalLink className="w-3.5 h-3.5" />
+                  </button>
+                )}
+
+                {/* Compact "Entrar" Action Button */}
                 <button
                   type="button"
                   onClick={() => onJoinDirect(group)}
